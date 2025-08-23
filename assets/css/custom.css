@@ -1,0 +1,79 @@
+/* ==========================
+   Editorial 調整用 CSS（文字説明ページ用）
+   PC・スマホ対応
+========================== */
+
+/* --- 全体文字・行間 --- */
+body {
+    font-size: 16px;       /* 基本文字サイズ（PC） */
+    line-height: 1.4;      /* 行間 */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 必要に応じて変更 */
+}
+
+/* --- セクション間余白 --- */
+section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* --- テーブルの基本調整 --- */
+table {
+    border-collapse: collapse; /* セルの境界線をまとめる */
+    width: auto;               /* 幅はコンテンツに合わせる */
+    margin: 0;                 /* 不要な余白を削除 */
+}
+
+table th, table td {
+    padding: 4px 6px;          /* セル内余白 */
+    text-align: left;           /* 左揃え */
+    border: 1px solid #ccc;    /* 必要なら枠線追加 */
+}
+
+/* --- 見出し余白 --- */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+/* --- リンクの見やすさ --- */
+a {
+    color: #003366;      /* 濃いリンク色 */
+    text-decoration: underline;
+}
+
+/* ==========================
+   レスポンシブ調整
+   最大幅768pxまで（スマホ・タブレット向け）
+========================== */
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;    /* 文字サイズを縮小 */
+        line-height: 1.3;   /* 行間も少し縮める */
+    }
+
+    table {
+        width: 100%;        /* テーブル幅を画面幅にフィット */
+        display: block;     /* 必要に応じてスクロール可能に */
+        overflow-x: auto;
+    }
+
+    table th, table td {
+        padding: 3px 4px;   /* セル内余白を縮小 */
+        font-size: 13px;    /* セル内文字サイズも縮小 */
+    }
+
+    section {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0.6em;
+        margin-bottom: 0.3em;
+    }
+}
