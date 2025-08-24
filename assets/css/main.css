@@ -3672,3 +3672,8 @@ button:disabled,
   margin-top: 0;
   padding-top: 0;
 }
+.back-index {
+float:right;
+    margin: 1em 0;
+    padding: .2em .6em;
+}
