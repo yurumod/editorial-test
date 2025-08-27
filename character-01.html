@@ -7,19 +7,24 @@
 <html>
 
 <head>
-	<title>（開発中）ヘブライ文字 - ヘブライ語学習ポータル</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 調整用 スタイルシート test-->
-	<link rel="stylesheet" href="assets/css/custom.css" />
+	<title>ヘブライ文字 - ヘブライ語学習ポータル</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- 調整用 スタイルシート
+	<link rel="stylesheet" href="assets/css/custom.css" /> test-->
+
+	 <!-- Google Fonts cssに書かれていたoriginalフォントもこちらで定義-->
+	
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="is-preload">
 
 	<!-- Wrapper -->
 	<div id="wrapper">
-
 		<!-- Main -->
 		<div id="main">
 			<div class="inner">
@@ -37,30 +42,23 @@
 						<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
 					</ul>
 				</header>
-
-				<!-- Content -->
 				<section>
-					<!-- 大きい見出し出さない
-									<header class="main">
-										<h1>Elements</h1>
-									</header>  
-									-->
-
 					<!-- Content -->
-					<h2 id="content">ヘブライ文字基本の22文字と語末形5文字（メインの学習内容一覧の項目名に一致させる）</h2>
+					<h2 id="content">ヘブライ文字基本の22文字と語末形5文字（メインの項目名に一致）</h2>
 					<p>ヘブライ語の文字をアレフベート(אלף-בית)といい、基本形が22文字、語末形が5文字あります。</p>
-					<div class="box">
+					<!-- index -->
+					<div class="box" id="index">
 						<ol>
-							<li><a href="#">基本の22文字</a></li>
-							<li><a href="#">語末形</a></li>
-							<li><a href="#">ダゲッシュ</a></li>
-							<li><a href="#">右から左へ</a></li>
+							<li><a href="#index1">基本の22文字</a></li>
+							<li><a href="#index2">語末形の5文字</a></li>
+							<li><a href="#index3">ダゲッシュ</a></li>
+							<li><a href="#index4">右から左へ</a></li>
 						</ol>
 					</div>
 					<div class="row">
-						<div class="col-6 col-12-small">
-							<h3>アレフベート基本の22文字</h3>
-							<h4>&nbsp; </h4>
+						<div class="col-6 col-12-small" id="index1">
+							<h4>基本の22文字</h4>
+							<!--<h4>&nbsp; </h4> -->
 							<div class="table-wrapper">
 								<table class="alt">
 									<thead>
@@ -72,9 +70,9 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>א</td>
+											<td lang="he-h">א</td>
 											<td>アレフ(alef)</td>
-											<td>母音／無声音</td>
+											<td>母音･無声音</td>
 										</tr>
 										<tr>
 											<td>ב</td>
@@ -92,11 +90,40 @@
 											<td>d</td>
 										</tr>
 										<tr>
-											<td>Item5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
+											<td>ה</td>
+											<td>ヘイ(hei)</td>
+											<td>h,母音</td>
 										</tr>
-									
+										<tr>
+											<td>ו</td>
+											<td>ヴァヴ(vav)</td>
+											<td>v,母音</td>
+										</tr>
+										<tr>
+											<td>ז</td>
+											<td>ザイン(zain)</td>
+											<td>z</td>
+										</tr>
+										<tr>
+											<td>ח</td>
+											<td>ヘット(het)</td>
+											<td>kh</td>
+										</tr>
+										<tr>
+											<td>ט</td>
+											<td>テット(tet)</td>
+											<td>t</td>
+										</tr>
+										<tr>
+											<td>י</td>
+											<td>ユッド(yud)</td>
+											<td>y、母音</td>
+										</tr>
+										<tr>
+											<td>כ</td>
+											<td>カフ(kaf)</td>
+											<td>k,kh</td>
+										</tr>
 									</tbody>
 									<!-- 要らない
 									<tfoot>
@@ -107,9 +134,10 @@
 									</tfoot> -->
 								</table>
 							</div>
+
 						</div>
 						<div class="col-6 col-12-small">
-							<h3>&nbsp; </h3>
+							<!-- <h3>&nbsp; </h3> -->
 							<h4>&nbsp; </h4>
 							<div class="table-wrapper">
 								<table class="alt">
@@ -122,29 +150,59 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>א</td>
-											<td>アレフ(alef)</td>
-											<td>母音／無声音</td>
+											<td>ל</td>
+											<td>ラメド(lamed)</td>
+											<td>l</td>
 										</tr>
 										<tr>
-											<td>ב</td>
-											<td>ベート(beit)</td>
-											<td>b/v</td>
+											<td>מ</td>
+											<td>メム(mem)</td>
+											<td>m</td>
 										</tr>
 										<tr>
-											<td>ג</td>
-											<td>ギメル(gimel)</td>
+											<td>נ</td>
+											<td>ヌン(nun)</td>
 											<td>g</td>
 										</tr>
 										<tr>
-											<td>ד</td>
-											<td>ダレト(dalet)</td>
-											<td>d</td>
+											<td>ס</td>
+											<td>サメフ(samekh)</td>
+											<td>s</td>
 										</tr>
 										<tr>
-											<td>Item5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
+											<td>ע</td>
+											<td>アイン(ayin)</td>
+											<td>y</td>
+										</tr>
+										<tr>
+											<td>פ</td>
+											<td>ペイ（pei）</td>
+											<td>p,f</td>
+										</tr>
+										<tr>
+											<td>צ</td>
+											<td>ツァディ(tsadi)</td>
+											<td>ts</td>
+										</tr>
+										<tr>
+											<td>ק</td>
+											<td>クフ(kuf)</td>
+											<td>k</td>
+										</tr>
+										<tr>
+											<td>ר</td>
+											<td>レシュ(resh)</td>
+											<td>r</td>
+										</tr>
+										<tr>
+											<td>ש</td>
+											<td>シン(shin)</td>
+											<td>s,sh</td>
+										</tr>
+										<tr>
+											<td>ת</td>
+											<td>タヴ(tav)</td>
+											<td>t</td>
 										</tr>
 									</tbody>
 									<!--
@@ -156,10 +214,13 @@
 									</tfoot> -->
 								</table>
 							</div>
+							<div class="back-index">
+								<a href="#index">Go To index</a>
+							</div>
 						</div>
-						<div class="col-6 col-12-small">
-							<h3>語末形の5文字</h3>
-							<h4>基本の22文字のうち、צ,פ,נ,מ,כは文字が語尾に位置する場合、語末形という別の文字を用います。</h4>
+						<div class="col-12" id="index2">
+							<h4>語末形の5文字</h4>
+							<p>基本の22文字のうち、<span lang="he-w">צ,פ,נ,מ,כ</span>は文字が語尾に位置する場合、語末形という別の文字を用います。</p>
 							<div class="table-wrapper">
 								<table class="alt">
 									<thead>
@@ -173,22 +234,22 @@
 										<tr>
 											<td>ך</td>
 											<td>カフ・ソフィート(kaf sofit)</td>
-											<td>母音／無声音</td>
+											<td>kh</td>
 										</tr>
 										<tr>
 											<td>ם</td>
 											<td>メム・ソフィート(mem sofit)</td>
-											<td>b/v</td>
+											<td>m</td>
 										</tr>
 										<tr>
 											<td>ן</td>
 											<td>ヌン・ソフィート(nun sofit)</td>
-											<td>g</td>
+											<td>n</td>
 										</tr>
 										<tr>
 											<td>ף</td>
 											<td>ペイ・ソフィート(pey sofit)</td>
-											<td>d</td>
+											<td>f</td>
 										</tr>
 										<tr>
 											<td>ץ</td>
@@ -196,6 +257,7 @@
 											<td>ts</td>
 										</tr>
 									</tbody>
+
 									<!--
 									<tfoot>
 										<tr>
@@ -205,449 +267,55 @@
 									</tfoot> -->
 								</table>
 							</div>
+							<p>名詞、形容詞、動詞の男女別単数／複数（動詞の場合は人称、時制も）などの語形（活用）変化で、語末形の文字の後に他の文字を追加する場合、語末形→基本形に変わります。</p>
+							<div class="box">例：
+								עץ ets（木・男性名詞単数形） → עצים etsim （木々・男性名詞複数形）
+							</div>
+							<p>上の例で、単数形の語尾のץ（語末形）は複数形に語形変化する際、男性名詞複数形を表わす語尾ים-が付くことにより語末でなくなるので基本形のצに変化します。</p>
+							<div class="back-index">
+								<a href="#index">Go To index</a>
+							</div>
 						</div>
-						<!-- Break -->
-						<div class="col-4 col-12-medium">
-							<h3>Interdum sapien gravida</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi
-								integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante
-								lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
+						<div class="col-12" id="index3">
+							<h3>ダゲッシュ</h3>
+							<p>基本の22文字のうち、פ,כ,בは子音が2種類あります。母音記号を用いた表記で文字の中心の点の有無でその区別をします。この点をダゲッシュといいます。</p>
+							<div class="box">ダゲッシュあり 発音 ダゲッシュなし 発音
+								בּ b ב v
+								כּ k כ kh
+								פּ p פ f
+							</div>
+							<p>現代ヘブライ語において母音記号を用いない表記の時はダゲッシュもつきません。発音の判断のポイントとしては以下のとおりです。</p>
+							<ul>
+								<li>語末はダゲッシュなしの発音（פ,כは文字が語末形に変わる）</li>
+								<li>語頭はダゲッシュありの発音</li>
+								<li>語の中間はどちらもあるが、アクセントがつく場所はダゲッシュありの発音が多い（例外あり）</li>
+							</ul>
+							<!-- 関連ページへの遷移はboxのようなものを作りたい -->
+							<p>さらに詳しく 学習項目 発音と表記-ダゲッシュのページへ</p>
+							<div class="back-index">
+								<a href="#index">Go To index</a>
+							</div>
 						</div>
-						<div class="col-4 col-12-medium">
-							<h3>Faucibus consequat lorem</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi
-								integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante
-								lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
+
+						<div class="col-12" id="index4">
+							<h3>右から左へ</h3>
+							<p>ヘブライ文字は右から左へ読みます。数字は左から右へ読みます。</p>
+							<div class="box">例：
+								מספר הטלפון שלי הוא 01-2345-6789.
+								mispar ha-telefon sheli hu efes akhat shtayim shalosh arba khamesh shesh sheba
+								shmone te'sha.
+								私の電話番号は01-2345-6789です。</div>
+							<div class="back-index">
+								<a href="#index">Go To index</a>
+							</div>
 						</div>
-						<div class="col-4 col-12-medium">
-							<h3>Accumsan montes viverra</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi
-								integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante
-								lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-						</div>
+
 					</div>
-
-					<hr class="major" />
-
-					<!-- Elements -->
-					<h2 id="elements">Elements</h2>
-					<div class="row gtr-200">
-						<div class="col-6 col-12-medium">
-
-							<!-- Text stuff -->
-							<h3>Text</h3>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this
-								is <em>emphasized</em>.
-								This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-								This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-								Finally, this is a <a href="#">link</a>.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<hr />
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi
-								integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante
-								lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
-								accumsan.</p>
-
-							<!-- Lists -->
-							<h3>Lists</h3>
-							<div class="row">
-								<div class="col-6 col-12-small">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor etiam magna etiam.</li>
-										<li>Sagittis lorem eleifend.</li>
-										<li>Felis dolore viverra.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor etiam magna etiam.</li>
-										<li>Sagittis lorem eleifend.</li>
-										<li>Felis feugiat viverra.</li>
-									</ul>
-
-								</div>
-								<div class="col-6 col-12-small">
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor etiam magna etiam.</li>
-										<li>Etiam vel lorem sed viverra.</li>
-										<li>Felis dolore viverra.</li>
-										<li>Dolor etiam magna etiam.</li>
-										<li>Etiam vel lorem sed viverra.</li>
-										<li>Felis dolore viverra.</li>
-									</ol>
-
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span
-													class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span
-													class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span
-													class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span
-													class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span
-													class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span
-													class="label">Tumblr</span></a></li>
-									</ul>
-
-								</div>
-							</div>
-							<h4>Definition</h4>
-							<dl>
-								<dt>Item1</dt>
-								<dd>
-									<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit
-										adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-										ac pellentesque praesent. Lorem ipsum dolor.</p>
-								</dd>
-								<dt>Item2</dt>
-								<dd>
-									<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit
-										adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-										ac pellentesque praesent. Lorem ipsum dolor.</p>
-								</dd>
-								<dt>Item3</dt>
-								<dd>
-									<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit
-										adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-										ac pellentesque praesent. Lorem ipsum dolor.</p>
-								</dd>
-							</dl>
-
-							<h4>Actions</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-
-							<h4>Pagination</h4>
-							<ul class="pagination">
-								<li><span class="button disabled">Prev</span></li>
-								<li><a href="#" class="page active">1</a></li>
-								<li><a href="#" class="page">2</a></li>
-								<li><a href="#" class="page">3</a></li>
-								<li><span>&hellip;</span></li>
-								<li><a href="#" class="page">8</a></li>
-								<li><a href="#" class="page">9</a></li>
-								<li><a href="#" class="page">10</a></li>
-								<li><a href="#" class="button">Next</a></li>
-							</ul>
-
-							<!-- Blockquote -->
-							<h3>Blockquote</h3>
-							<blockquote>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit
-								adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
-								pellentesque praesent. Lorem ipsum dolor. Lorem ipsum dolor vestibulum ante ipsum primis
-								in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
-								accumsan eu faucibus.</blockquote>
-
-							<!-- Table -->
-							<h3>Table</h3>
-
-							<h4>Default</h4>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h4>Alternate</h4>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-						</div>
-						<div class="col-6 col-12-medium">
-
-							<!-- Buttons -->
-							<h3>Buttons</h3>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">Large</a></li>
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button primary small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-
-							<!-- Form -->
-							<h3>Form</h3>
-
-							<form method="post" action="#">
-								<div class="row gtr-uniform">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value=""
-											placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value=""
-											placeholder="Email" />
-									</div>
-									<!-- Break -->
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<!-- Break -->
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High</label>
-									</div>
-									<!-- Break -->
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human</label>
-									</div>
-									<!-- Break -->
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
-											rows="6"></textarea>
-									</div>
-									<!-- Break -->
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-
-							<!-- Image -->
-							<h3>Image</h3>
-
-							<h4>Fit</h4>
-							<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg"
-												alt="" /></span></div>
-									<!-- Break -->
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg"
-												alt="" /></span></div>
-									<!-- Break -->
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg"
-												alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg"
-												alt="" /></span></div>
-								</div>
-							</div>
-
-							<h4>Left &amp; Right</h4>
-							<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor
-								sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
-								Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-								volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt
-								felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus
-								euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
-								felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-								praesent.</p>
-							<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor
-								sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
-								Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-								volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt
-								felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus
-								euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
-								felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-								praesent.</p>
-
-							<!-- Box -->
-							<h3>Box</h3>
-							<div class="box">
-								<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis
-									iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-									praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum
-									primis in faucibus vestibulum.</p>
-							</div>
-
-							<!-- Preformatted Code -->
-							<h3>Preformatted</h3>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
-
-						</div>
-					</div>
-
 				</section>
 
 			</div>
 		</div>
+
 
 		<!-- Sidebar -->
 		<div id="sidebar">
@@ -744,8 +412,8 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 			</div>
 		</div>
-
 	</div>
+
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
